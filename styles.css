@@ -142,10 +142,10 @@ section {
   margin-bottom: 0;
 }
 
-.nutrition p{
-    font-size: 0.9rem;
-    margin-top: 0;
-    margin-bottom: 0;
+.nutrition p {
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .nutrition h2 {
@@ -166,13 +166,13 @@ section {
   border-bottom: 1px solid var(--stone-150);
 }
 
-.nutrition td:last-child{
-    color: var(--brown-800);
-    font-weight: bold;
+.nutrition td:last-child {
+  color: var(--brown-800);
+  font-weight: bold;
 }
 
 hr {
-    border: 1px solid var(--stone-150);
+  border: 1px solid var(--stone-150);
 }
 
 footer {
@@ -191,4 +191,70 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: var(--stone-900);
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .header-image {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin: 1.5rem 1.5rem 1rem;
+  }
+
+  main {
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .preparation {
+    padding: 1rem;
+  }
+
+  .preparation h2 {
+    padding-left: 0;
+  }
+
+  .preparation ul {
+    margin-left: 1.5rem;
+  }
+
+  .ingredients h2,
+  .instructions h2,
+  .nutrition h2 {
+    font-size: 1.3rem;
+  }
+
+  .ingredients ul,
+  .instructions ol {
+    margin-left: 1rem;
+  }
+
+  .ingredients li,
+  .instructions li {
+    font-size: 1rem;
+  }
+
+  .nutrition table {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
 }
