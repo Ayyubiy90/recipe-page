@@ -10,10 +10,19 @@ body {
 header {
   text-align: center;
   padding: 20px;
+  position: relative;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
 }
 
 h1 {
   color: hsl(332, 51%, 32%);
+  margin: 0;
 }
 
 main {
