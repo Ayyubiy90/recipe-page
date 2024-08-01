@@ -1,24 +1,35 @@
-/* styles.css */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
 
 body {
   font-family: "Outfit", sans-serif;
   font-size: 16px;
-  color: hsl(30, 10%, 34%);
-  background-color: hsl(30, 54%, 90%);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--stone-600);
+  background-color: var(--stone-100);
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .container {
-  background-color: hsl(0, 0%, 100%);
+  max-width: 736px;
   margin: 0 auto;
-  max-width: 1440px;
-  padding: 20px;
+  background-color: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header {
-  text-align: center;
-  padding: 20px;
   position: relative;
 }
 
@@ -26,64 +37,138 @@ header {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: var(--stone-900);
 }
 
 h1 {
-  color: hsl(332, 51%, 32%);
-  margin: 0;
+  font-size: 40px;
+  margin: 40px 40px 24px;
 }
 
 main {
-  padding: 20px;
+  padding: 0 40px 40px;
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+}
+
+.intro {
+  font-size: 18px;
+  margin-bottom: 32px;
 }
 
 h2 {
-  color: hsl(30, 18%, 87%);
+  font-size: 28px;
+  margin-bottom: 24px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
+ul,
 ol {
-  margin: 0;
   padding-left: 20px;
 }
 
-table {
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--brown-800);
+}
+
+.nutrition {
+  background-color: var(--rose-50);
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.nutrition h2 {
+  color: var(--rose-800);
+}
+
+.nutrition table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 24px;
 }
 
-table,
-th,
-td {
-  border: 1px solid hsl(30, 10%, 34%);
+.nutrition th,
+.nutrition td {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid var(--stone-150);
 }
 
-th,
-td {
-  padding: 10px;
-  text-align: left;
+.nutrition th {
+  font-weight: 600;
+  color: var(--rose-800);
 }
 
 footer {
+  background-color: var(--stone-150);
+  padding: 24px 40px;
   text-align: center;
-  padding: 20px;
-  background-color: hsl(30, 54%, 90%);
+  font-size: 14px;
 }
 
-.attribution a {
-  color: hsl(332, 51%, 32%);
+footer a {
+  color: var(--brown-800);
   text-decoration: none;
+  font-weight: 700;
 }
 
-.attribution a:hover {
+footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 24px 24px 16px;
+  }
+
+  main {
+    padding: 0 24px 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .nutrition {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 1439px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 736px;
+  }
 }
