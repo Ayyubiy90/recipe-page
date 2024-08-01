@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: 736px;
+  max-width: 40rem;
   margin: 0 auto;
   background-color: var(--white);
   border-radius: 12px;
@@ -34,9 +34,11 @@ header {
 }
 
 .header-image {
-  width: 100%;
+  width: 92%;
   height: auto;
   display: block;
+  margin: 1.5rem auto 0;
+  border-radius: 10px;
 }
 
 h1,
@@ -47,8 +49,10 @@ h2 {
 }
 
 h1 {
-  font-size: 40px;
-  margin: 40px 40px 24px;
+  font-size: 1.5rem;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 main {
@@ -60,27 +64,67 @@ section {
 }
 
 .intro {
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 32px;
 }
 
-h2 {
-  font-size: 28px;
-  margin-bottom: 24px;
+.preparation {
+  background-color: var(--rose-50);
+  padding-bottom: 0.1rem;
+  border-radius: 10px;
 }
 
-ul,
-ol {
-  padding-left: 20px;
+.preparation h2 {
+  font-weight: 700;
+  margin: 0.5rem;
+  color: var(--rose-800);
 }
 
-li {
+.preparation ul {
+  margin-top: 0;
+  margin-left: 3.5rem;
+  padding: 0;
+}
+
+.preparation li {
   margin-bottom: 8px;
+  padding-left: 0.8rem;
 }
 
-strong {
-  font-weight: 600;
+.ingredients h2 {
+  font-size: 1.5rem;
   color: var(--brown-800);
+  font-weight: 500;
+}
+
+.ingredients ul {
+  padding-left: 0;
+  margin-left: 1.4rem;
+}
+
+.ingredients li {
+  margin-bottom: 8px;
+  padding-left: 0.8rem;
+}
+
+.ingredients ::marker {
+  color: var(--brown-800);
+}
+
+.instructions h2 {
+  font-size: 1.5rem;
+  color: var(--brown-800);
+  font-weight: 500;
+}
+
+.instructions ol {
+    padding-left: 0;
+    margin-left: 1.5rem;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+  padding-left: 1rem;
 }
 
 .nutrition {
@@ -90,7 +134,8 @@ strong {
 }
 
 .nutrition h2 {
-  color: var(--rose-800);
+  color: var(--brown-800);
+  font-size: 1.5rem;
 }
 
 .nutrition table {
@@ -127,48 +172,4 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 375px) {
-  body {
-    padding: 0;
-  }
-
-  .container {
-    border-radius: 0;
-  }
-
-  h1 {
-    font-size: 28px;
-    margin: 24px 24px 16px;
-  }
-
-  main {
-    padding: 0 24px 24px;
-  }
-
-  h2 {
-    font-size: 24px;
-    margin-bottom: 16px;
-  }
-
-  .intro {
-    font-size: 16px;
-  }
-
-  .nutrition {
-    padding: 24px;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 1439px) {
-  .container {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 736px;
-  }
 }
